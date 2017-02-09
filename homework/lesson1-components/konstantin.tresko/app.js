@@ -1,6 +1,6 @@
 import angular from 'angular'
-import rootApp from './src/rootApp'
-import userCards from './src/userCards'
+import rootApp from './src/rootApp/rootApp'
+import userCards from './src/userCards/userCards'
 
 var app = angular.module('app', []);
 app.component('userCards', userCards)

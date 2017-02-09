@@ -33267,7 +33267,7 @@
 	try {ngModule=angular.module(["ng"])}
 	catch(e){ngModule=angular.module("ng",[])}
 	var v1="<user-cards ng-repeat=\"user in $ctrl.allUsers\" user=\"user\" remove=\"$ctrl.removeItem(user)\" selected=\"$ctrl.selected\">\n</user-cards>\n";
-	var id1="konstantin.tresko/src/rootApp.html";
+	var id1="src/rootApp/rootApp.html";
 	var inj=angular.element(window.document).injector();
 	if(inj){inj.get("$templateCache").put(id1,v1);}
 	else{ngModule.run(["$templateCache",function(c){c.put(id1,v1)}]);}
@@ -33329,7 +33329,7 @@
 	try {ngModule=angular.module(["ng"])}
 	catch(e){ngModule=angular.module("ng",[])}
 	var v1="<div class=\"panel panel-info\" ng-class=\"{selected: $ctrl.user == $ctrl.selected}\" ng-click=\"$ctrl.onClick()\">\n<div class=\"panel-heading\">\n<h3 class=\"panel-title\">{{$ctrl.user.firstName}} {{$ctrl.user.surname}}</h3>\n</div>\n<div class=\"panel-body\">\n<div class=\"row\">\n<div class=\"col-md-3 col-lg-3\">\n<img ng-src=\"{{$ctrl.user.photo}}\" width=\"100%/\">\n</div>\n<div class=\"col-md-9 col-lg-9\">\n<table class=\"table table-user-information\">\n<tbody>\n<tr><td>Country</td><td>{{$ctrl.user.country}}</td></tr>\n</tbody>\n</table>\n</div>\n</div>\n</div>\n<div class=\"panel-footer\">\n<button type=\"button\" name=\"button\" ng-click=\"$ctrl.remove({user: $ctrl.user})\">Удалить</button>\n</div>\n</div>\n";
-	var id1="konstantin.tresko/src/userCards.html";
+	var id1="src/userCards/userCards.html";
 	var inj=angular.element(window.document).injector();
 	if(inj){inj.get("$templateCache").put(id1,v1);}
 	else{ngModule.run(["$templateCache",function(c){c.put(id1,v1)}]);}
